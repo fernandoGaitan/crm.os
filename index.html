@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes y Precios - Ferretería OS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#1e2532', // Color oscuro de tu sidebar
+                            green: '#97d700', // Verde brillante de tus botones
+                            greenHover: '#86bf00',
+                            gray: '#f4f5f7' // Fondo claro de tu panel
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-gray font-sans antialiased text-gray-800">
+
+    <!-- Showcase / Gallery Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-brand-green font-semibold tracking-wide uppercase text-sm mb-2">Conoce el sistema</h2>
+            <h1 class="text-3xl font-extrabold text-brand-dark sm:text-4xl">Una interfaz diseñada para la productividad</h1>
+            <p class="mt-4 text-lg text-gray-500">Descubre cómo Ferretería OS simplifica cada aspecto de tu negocio con módulos intuitivos y fáciles de usar.</p>
+        </div>
+
+        <!-- Hero Image (Dashboard) -->
+        <div class="mb-16 relative group">
+            <!-- Efecto de resplandor detrás de la imagen principal -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-green to-brand-greenHover rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <img src="dashboard.JPG" alt="Dashboard Principal" class="relative rounded-2xl shadow-2xl border border-gray-200 w-full object-cover" onerror="this.src='https://placehold.co/1200x675/1e2532/97d700?text=Dashboard+Principal'">
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Caja -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <img src="Caja.JPG" alt="Módulo de Caja" class="w-full h-48 object-cover object-top border-b border-gray-100" onerror="this.src='https://placehold.co/600x400/1e2532/97d700?text=Caja+y+Ventas'">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Punto de Venta Rápido</h3>
+                    <p class="text-sm text-gray-600">Procesa ventas, crea paquetes y emite facturas en segundos con una caja fluida.</p>
+                </div>
+            </div>
+            
+            <!-- Inventario -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <img src="Inventario.JPG" alt="Módulo de Inventario" class="w-full h-48 object-cover object-top border-b border-gray-100" onerror="this.src='https://placehold.co/600x400/1e2532/97d700?text=Control+de+Inventario'">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Inventario en Tiempo Real</h3>
+                    <p class="text-sm text-gray-600">Gestiona stock, categorías, costos y visualiza tus márgenes de ganancia fácilmente.</p>
+                </div>
+            </div>
+
+            <!-- Finanzas -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <img src="finanzas.JPG" alt="Módulo de Finanzas" class="w-full h-48 object-cover object-top border-b border-gray-100" onerror="this.src='https://placehold.co/600x400/1e2532/97d700?text=Finanzas+y+Gastos'">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Finanzas Claras</h3>
+                    <p class="text-sm text-gray-600">Control estricto de facturación, cuentas por cobrar y registro de gastos operativos.</p>
+                </div>
+            </div>
+            
+            <!-- Marketing -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <img src="Email Marketing.JPG" alt="Módulo de Marketing" class="w-full h-48 object-cover object-top border-b border-gray-100" onerror="this.src='https://placehold.co/600x400/1e2532/97d700?text=Email+Marketing'">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Marketing Integrado</h3>
+                    <p class="text-sm text-gray-600">Fideliza clientes creando y lanzando campañas de correo masivo directamente.</p>
+                </div>
+            </div>
+
+            <!-- Tareas -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <img src="Tareas.JPG" alt="Gestión de Tareas" class="w-full h-48 object-cover object-top border-b border-gray-100" onerror="this.src='https://placehold.co/600x400/1e2532/97d700?text=Gestión+de+Tareas'">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Flujo de Tareas</h3>
+                    <p class="text-sm text-gray-600">Organiza actividades en formato Kanban (pendientes, en proceso, completadas).</p>
+                </div>
+            </div>
+
+            <!-- Auditoría y Seguridad -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                <img src="Auditoria.JPG" alt="Auditoría y Logs" class="w-full h-48 object-cover object-top border-b border-gray-100" onerror="this.src='https://placehold.co/600x400/1e2532/97d700?text=Auditoría+y+Seguridad'">
+                <div class="p-6">
+                    <h3 class="text-lg font-bold text-brand-dark mb-2">Auditoría Total</h3>
+                    <p class="text-sm text-gray-600">Registro histórico inalterable de cada acción y movimiento de tus cajeros y agentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-brand-green font-semibold tracking-wide uppercase text-sm mb-2">Escala tu negocio</h2>
+            <h1 class="text-4xl font-extrabold text-brand-dark sm:text-5xl mb-4">Planes diseñados para tu crecimiento</h1>
+            <p class="text-lg text-gray-500">
+                Lleva el control total de tu inventario, ventas y personal con Ferretería OS. Sin contratos forzosos, cancela cuando quieras.
+            </p>
+        </div>
+
+        <!-- Pricing Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+            <!-- Plan 1: Básico -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col relative">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Emprendedor</h3>
+                <p class="text-sm text-gray-500 mb-6">Ideal para un solo local que busca digitalizar sus procesos.</p>
+                
+                <div class="mb-6">
+                    <span class="text-4xl font-extrabold text-gray-900">$25</span>
+                    <span class="text-gray-500 font-medium text-lg">/mes</span>
+                </div>
+
+                <a href="#" class="w-full block text-center bg-white border-2 border-gray-200 text-gray-900 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 transition duration-200 mb-8">
+                    Comenzar Prueba Gratis
+                </a>
+
+                <div class="flex flex-col gap-4">
+                    <p class="font-medium text-sm text-gray-900 uppercase tracking-wide">Qué incluye:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm"><strong>1 Usuario</strong> simultáneo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Auxiliares y cajeros <strong>ilimitados</strong> con PIN de seguridad</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Módulo completo de Caja y Ventas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Gestión de Inventario y Finanzas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Plan 2: Pro (Destacado) -->
+            <div class="bg-brand-dark rounded-2xl shadow-2xl p-8 flex flex-col relative transform md:-translate-y-4 border border-brand-dark">
+                <!-- Badge -->
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span class="bg-brand-green text-brand-dark text-xs font-bold uppercase tracking-wider py-1 px-3 rounded-full">
+                        Más Popular
+                    </span>
+                </div>
+
+                <h3 class="text-xl font-semibold text-white mb-2">Profesional</h3>
+                <p class="text-sm text-gray-300 mb-6">Para negocios en expansión con más de una sucursal.</p>
+                
+                <div class="mb-6">
+                    <span class="text-4xl font-extrabold text-white">$40</span>
+                    <span class="text-gray-400 font-medium text-lg">/mes</span>
+                </div>
+
+                <a href="#" class="w-full block text-center bg-brand-green text-brand-dark font-bold py-3 px-4 rounded-lg hover:bg-brand-greenHover transition duration-200 mb-8 shadow-[0_0_15px_rgba(151,215,0,0.4)]">
+                    Contratar Plan Pro
+                </a>
+
+                <div class="flex flex-col gap-4">
+                    <p class="font-medium text-sm text-gray-300 uppercase tracking-wide">Todo lo de Emprendedor, más:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-200 text-sm"><strong>2 Usuarios</strong> simultáneos trabajando a la vez</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-200 text-sm">Gestión de <strong>múltiples sucursales</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-200 text-sm">Sincronización y revisión de inventario entre tiendas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-200 text-sm">Módulo de Marketing básico y Auditoría</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Plan 3: Avanzado -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col relative">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Élite</h3>
+                <p class="text-sm text-gray-500 mb-6">Control absoluto de tiendas, finanzas y auditoría de personal.</p>
+                
+                <div class="mb-6">
+                    <span class="text-4xl font-extrabold text-gray-900">$60</span>
+                    <span class="text-gray-500 font-medium text-lg">/mes</span>
+                </div>
+
+                <a href="#" class="w-full block text-center bg-white border-2 border-gray-200 text-gray-900 font-semibold py-3 px-4 rounded-lg hover:bg-gray-50 transition duration-200 mb-8">
+                    Contactar Ventas
+                </a>
+
+                <div class="flex flex-col gap-4">
+                    <p class="font-medium text-sm text-gray-900 uppercase tracking-wide">Todo lo de Pro, más:</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Hasta <strong>5 Agentes/Usuarios</strong> simultáneos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Registro estricto de <strong>actividad de personal</strong> (Ingresos, salidas, horarios)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Informes de rendimiento por empleado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-brand-green flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="ml-3 text-gray-600 text-sm">Soporte Técnico prioritario</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
